@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: demo_data
+    database: RAW
+    schema: TPCH_SF001
+
+    tables:
+      - name: customer
+      - name: line_item

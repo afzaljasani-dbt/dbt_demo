@@ -6,9 +6,10 @@ with customers as (
         c_address as address,
         c_nationkey as nationkey,
         c_phone as phone_number,
-        c_mktsegment as market_segment
+        c_mktsegment as market_segment,
+        *
 
-    from RAW.TPCH_SF001.CUSTOMER
+    from {{ source('demo_data', 'customer') }}
 )
 
 select *
