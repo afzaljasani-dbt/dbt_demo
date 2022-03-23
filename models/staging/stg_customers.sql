@@ -10,6 +10,7 @@ with customers as (
         *
 
     from {{ source('demo_data', 'customer') }}
+    
 )
 
 select *
