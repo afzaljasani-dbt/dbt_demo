@@ -32,7 +32,8 @@
 --  select
 --         customer_key,
 --         sum(CASE WHEN  market_segment = 'AUTOMOBILE' then 1 ELSE 0 END) as automobile_count,
---         sum(CASE WHEN  market_segment = 'MACHINERY' then 1 ELSE 0 END) as machinery_count
+--         sum(CASE WHEN  market_segment = 'MACHINERY' then 1 ELSE 0 END) as machinery_count,
+--         sum(CASE WHEN  market_segment = 'BUILDING' then 1 ELSE 0 END) as automobile_count
 --     from customers
 
 
