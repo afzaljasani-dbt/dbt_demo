@@ -7,4 +7,6 @@ sources:
 
     tables:
       - name: customer
-      - name: line_item
+      - name: lineitem
+      - name: natio
+      - name: orders
