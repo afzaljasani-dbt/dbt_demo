@@ -1,4 +1,4 @@
-{%- set market_segment_var = ['BUILDING', 'AUTOMOBILE', 'MACHINERY'] -%}
+{%- set market_segment_var = ['BUILDERS', 'AUTOMOBILE', 'MACHINERY'] -%}
  
  with customers as (
 
