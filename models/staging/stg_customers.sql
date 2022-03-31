@@ -10,6 +10,7 @@ with customers as (
         c_comment as comment
 
     from {{ source('demo_data', 'customer') }}
+
     
 )
 

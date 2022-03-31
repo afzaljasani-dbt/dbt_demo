@@ -9,7 +9,7 @@ with cleaned_orders as (
         when o_orderstatus = 'F'
             then 'Fulfilled'
         when o_orderstatus = 'P'
-            then 'Pending'
+            then 'Processed'
         else NULL
         end as order_status,
         
