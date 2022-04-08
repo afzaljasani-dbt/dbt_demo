@@ -9,7 +9,8 @@ with customers as (
         c_mktsegment as market_segment,
         c_comment as comment
 
-    from {{ source('demo_data', 'customer') }}
+    from  {{ source('demo_data', 'customer') }}
+
 
     
 )
