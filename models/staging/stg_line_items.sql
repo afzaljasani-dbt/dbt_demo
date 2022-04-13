@@ -6,3 +6,5 @@ with line_items as (
 )
 
 select * from line_items
+
+{{ limit_data_in_dev('l_shipdate') }}
