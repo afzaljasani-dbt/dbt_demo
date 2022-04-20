@@ -3,6 +3,7 @@ with cleaned_orders as (
     select 
         o_orderkey as order_id,
         o_custkey as customer_id,
+        o_orderdate as order_date,
 
         case when o_orderstatus = 'O'
             then 'Open'
@@ -14,7 +15,8 @@ with cleaned_orders as (
         end as order_status,
         
         o_orderpriority as order_priority,
-
+        
+        -- using macro here
         {{ cents_to_dollars('o_totalprice') }} as amount
             
 
