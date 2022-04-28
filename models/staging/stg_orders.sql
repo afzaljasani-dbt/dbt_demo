@@ -12,7 +12,7 @@ with cleaned_orders as (
         when o_orderstatus = 'P'
             then 'Processed'
         else NULL
-        end as order_status,
+        end as order_statu,
         
         o_orderpriority as order_priority,
         
