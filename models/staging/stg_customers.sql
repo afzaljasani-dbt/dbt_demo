@@ -13,5 +13,4 @@ with customers as (
     from  {{ source('demo_data', 'customer') }}
 )
 
-select *
-from customers
+select customers
