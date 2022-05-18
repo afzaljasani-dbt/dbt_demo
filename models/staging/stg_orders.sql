@@ -10,7 +10,7 @@ with cleaned_orders as (
         when o_orderstatus = 'F'
             then 'Fulfilled'
         when o_orderstatus = 'P'
-            then 'Processed'
+            then 'Pending'
         else NULL
         end as order_status,
         
@@ -20,7 +20,7 @@ with cleaned_orders as (
         {{ cents_to_dollars('o_totalprice') }} as amount
             
 
-    from {{ source('demo_data', 'orders') }}
+    from  {{ source('demo_data', 'orders') }}
 )
 
 select * from cleaned_orders
