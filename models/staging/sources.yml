@@ -4,6 +4,7 @@ sources:
   - name: demo_data
     database: RAW
     schema: TPCH_SF001
+    
 
     tables:
       - name: customer
@@ -26,6 +27,7 @@ sources:
 
       - name: lineitem
       - name: nation
+      
       
       - name: orders
         description: main order tracking table
