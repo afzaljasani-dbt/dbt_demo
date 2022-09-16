@@ -1,9 +1,10 @@
 {{
     config(
         materialized='incremental',
-        unique_key='id'
+        unique_key='customer_key'
     )
 }}
+
 
 with customers as (
 
