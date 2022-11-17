@@ -12,7 +12,7 @@ def model(dbt, session):
         key.upper(): value.upper() for key, value in customers_renames.items()
     }
 
-    # reference raw_customers seed file in variable
+    
     stg_customers = dbt.ref("raw_customers")
 
     for col_name in customers_renames:
