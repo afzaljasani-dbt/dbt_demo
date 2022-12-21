@@ -11,6 +11,6 @@
     )
 }}
 
-select * from {{ source('demo_data', 'customer') }}
+select * from {{ source('tpch', 'customer') }}
 
 {% endsnapshot %}
