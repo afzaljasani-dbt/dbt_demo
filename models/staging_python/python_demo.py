@@ -4,7 +4,7 @@ def model(dbt, session):
     upstream_model = dbt.ref("my_first_dbt_model")
 
     # DataFrame representing an upstream source
-    upstream_source = dbt.source("demo_data", "customer")
+    upstream_source = dbt.source("tpch", "customer")
 
     final_df = upstream_source
     

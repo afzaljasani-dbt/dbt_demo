@@ -20,7 +20,7 @@ with cleaned_orders as (
         {{ cents_to_dollars('o_totalprice') }} as amount
             
 
-    from  {{ source('demo_data', 'orders') }}
+    from  {{ source('tpch', 'orders') }}
 )
 
 select * from cleaned_orders
