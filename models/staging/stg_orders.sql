@@ -4,6 +4,7 @@ with cleaned_orders as (
         o_orderkey as order_id,
         o_custkey as customer_id,
         o_orderdate as order_date,
+        o_orderstatus as status_code,
 
         case when o_orderstatus = 'O'
             then 'Open'

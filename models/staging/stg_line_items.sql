@@ -47,5 +47,3 @@ renamed as (
 )
 
 select * from renamed
-
-{{ limit_data_in_dev('ship_date') }}
