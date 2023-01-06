@@ -42,3 +42,9 @@ models:
     # Applies to all files under models/staging_python
     staging_python:
       materialized: table
+
+# Configuring tests 
+
+tests:
+  +store_failures: true
+  +schema: tests_failures

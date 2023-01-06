@@ -49,6 +49,8 @@ select
         item_tax_amount
     ){{ money() }} as net_item_sales_amount
 
+    
+
 from
     orders
 inner join line_item
