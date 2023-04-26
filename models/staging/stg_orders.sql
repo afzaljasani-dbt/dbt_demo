@@ -14,8 +14,6 @@ with cleaned_orders as (
             then 'Pending'
         else NULL
         end as order_status,
-
-        
         
         o_orderpriority as order_priority,
         
