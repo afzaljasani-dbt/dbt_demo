@@ -11,6 +11,7 @@ line_item as (
 )
 select 
 
+
     line_item.order_item_key,
     orders.order_id,
     orders.customer_id,

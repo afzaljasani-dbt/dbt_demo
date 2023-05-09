@@ -15,7 +15,7 @@ with cleaned_orders as (
         else NULL
         end as order_status,
         
-        o_orderpriority as order_priority,
+        -- o_orderpriority as order_priority,
         
         -- using macro here
         {{ cents_to_dollars('o_totalprice') }} as amount
